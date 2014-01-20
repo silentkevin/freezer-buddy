@@ -49,7 +49,7 @@ grails.project.dependency.resolution = {
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes e.g.
         // runtime 'mysql:mysql-connector-java:5.1.27'
-        // runtime 'org.postgresql:postgresql:9.3-1100-jdbc41'
+        runtime 'org.postgresql:postgresql:9.3-1100-jdbc41'
     }
 
     plugins {
@@ -71,6 +71,9 @@ grails.project.dependency.resolution = {
         compile ":angularjs-resources:1.2.5"
 
         compile ":twitter-bootstrap:3.0.3"
+
+        compile ":heroku:1.0.1"
+        compile ":cloud-support:1.0.8"
 
 //        compile ":oauth:2.1.0"
 
