@@ -6,3 +6,5 @@
 *.ear
 
 target/
+
+.idea/workspace.xml
