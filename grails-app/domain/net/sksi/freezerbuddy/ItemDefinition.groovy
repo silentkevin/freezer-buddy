@@ -1,7 +1,7 @@
 package net.sksi.freezerbuddy
 
 class ItemDefinition {
-    String id
+    String id = UUID.randomUUID().toString()
 
     String name
     String description

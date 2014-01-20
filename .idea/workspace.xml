@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4527f367-6e73-4f31-a8d7-ad9272857572" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freezer-buddy-grailsPlugins.iml" afterPath="$PROJECT_DIR$/freezer-buddy-grailsPlugins.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/freezer-buddy.iml" afterPath="$PROJECT_DIR$/freezer-buddy.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/Config.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/net/sksi/freezerbuddy/ContainedItem.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/net/sksi/freezerbuddy/ContainedItem.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/net/sksi/freezerbuddy/Freezer.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/net/sksi/freezerbuddy/Freezer.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/net/sksi/freezerbuddy/ItemDefinition.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/net/sksi/freezerbuddy/ItemDefinition.groovy" />
     </list>
     <ignored path="freezer-buddy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -88,10 +89,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BootStrap.groovy" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="BootStrap.groovy" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+            <state line="27" column="0" selection-start="1107" selection-end="1107" vertical-scroll-proportion="0.7417582" vertical-offset="0" max-vertical-offset="546">
               <folding />
             </state>
           </provider>
@@ -106,10 +107,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Config.groovy" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Config.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/conf/Config.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="112" column="7" selection-start="4371" selection-end="4371" vertical-scroll-proportion="0.4371482" vertical-offset="1447" max-vertical-offset="1980">
+            <state line="111" column="115" selection-start="4396" selection-end="4396" vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="2010">
               <folding />
             </state>
           </provider>
@@ -119,7 +120,10 @@
         <entry file="file://$PROJECT_DIR$/grails-app/views/index.gsp">
           <provider selected="true" editor-type-id="text-editor">
             <state line="112" column="0" selection-start="3020" selection-end="3020" vertical-scroll-proportion="-17.375" vertical-offset="1263" max-vertical-offset="1950">
-              <folding />
+              <folding>
+                <marker date="1390251289328" expanded="true" signature="2347:2473" placeholder="..." />
+                <marker date="1390251289328" expanded="true" signature="3134:3318" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -127,7 +131,7 @@
       <file leaf-file-name="Freezer.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/domain/net/sksi/freezerbuddy/Freezer.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="190" selection-end="190" vertical-scroll-proportion="-3.6734693" vertical-offset="0" max-vertical-offset="270">
+            <state line="9" column="38" selection-start="192" selection-end="192" vertical-scroll-proportion="-2.7551022" vertical-offset="0" max-vertical-offset="495">
               <folding />
             </state>
           </provider>
@@ -139,7 +143,7 @@
       <file leaf-file-name="ItemDefinition.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/domain/net/sksi/freezerbuddy/ItemDefinition.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="22" selection-start="107" selection-end="107" vertical-scroll-proportion="-1.8367347" vertical-offset="0" max-vertical-offset="330">
+            <state line="8" column="0" selection-start="140" selection-end="201" vertical-scroll-proportion="-2.4489796" vertical-offset="0" max-vertical-offset="330">
               <folding />
             </state>
           </provider>
@@ -169,7 +173,7 @@
       <file leaf-file-name="ContainedItem.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/domain/net/sksi/freezerbuddy/ContainedItem.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="179" selection-end="179" vertical-scroll-proportion="-3.367347" vertical-offset="0" max-vertical-offset="255">
+            <state line="17" column="31" selection-start="332" selection-end="332" vertical-scroll-proportion="-5.2040815" vertical-offset="0" max-vertical-offset="390">
               <folding />
             </state>
           </provider>
@@ -194,12 +198,13 @@
         <option value="$PROJECT_DIR$/test/unit/net/sksi/freezerbuddy/FreezerSpec.groovy" />
         <option value="$PROJECT_DIR$/test/unit/net/sksi/freezerbuddy/ItemSpec.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/net/sksi/freezerbuddy/Item.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/index.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/net/sksi/freezerbuddy/ItemDefinition.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/net/sksi/freezerbuddy/Freezer.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/net/sksi/freezerbuddy/ContainedItem.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/views/index.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" />
       </list>
     </option>
   </component>
@@ -662,7 +667,7 @@
       <changelist id="4527f367-6e73-4f31-a8d7-ad9272857572" name="Default" comment="" />
       <created>1390248560648</created>
       <updated>1390248560648</updated>
-      <workItem from="1390248564499" duration="3026000" />
+      <workItem from="1390248564499" duration="3626000" />
     </task>
     <task id="LOCAL-00001" summary="stuff">
       <created>1390250149087</created>
@@ -672,7 +677,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3026000" />
+    <option name="totallyTimeSpent" value="3626000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2" y="-3" width="1762" height="1031" extended-state="6" />
@@ -737,20 +742,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/ApplicationResources.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="910">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="910">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/conf/DataSource.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="14" selection-start="442" selection-end="442" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
@@ -772,40 +763,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/net/sksi/freezerbuddy/ItemDefinition.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="22" selection-start="107" selection-end="107" vertical-scroll-proportion="-1.8367347" vertical-offset="0" max-vertical-offset="330">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/net/sksi/freezerbuddy/Freezer.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="190" selection-end="190" vertical-scroll-proportion="-3.6734693" vertical-offset="0" max-vertical-offset="270">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/net/sksi/freezerbuddy/ContainedItem.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="179" selection-end="179" vertical-scroll-proportion="-3.367347" vertical-offset="0" max-vertical-offset="255">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/index.gsp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="112" column="0" selection-start="3020" selection-end="3020" vertical-scroll-proportion="-17.375" vertical-offset="1263" max-vertical-offset="1950">
-          <folding />
+          <folding>
+            <marker date="1390251289328" expanded="true" signature="2347:2473" placeholder="..." />
+            <marker date="1390251289328" expanded="true" signature="3134:3318" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -816,9 +780,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/ApplicationResources.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="910">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/net/sksi/freezerbuddy/ContainedItem.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="31" selection-start="332" selection-end="332" vertical-scroll-proportion="-5.2040815" vertical-offset="0" max-vertical-offset="390">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/net/sksi/freezerbuddy/ItemDefinition.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="140" selection-end="201" vertical-scroll-proportion="-2.4489796" vertical-offset="0" max-vertical-offset="330">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/net/sksi/freezerbuddy/Freezer.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="38" selection-start="192" selection-end="192" vertical-scroll-proportion="-2.7551022" vertical-offset="0" max-vertical-offset="495">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/conf/Config.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="7" selection-start="4371" selection-end="4371" vertical-scroll-proportion="0.4371482" vertical-offset="1447" max-vertical-offset="1980">
+        <state line="111" column="115" selection-start="4396" selection-end="4396" vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="2010">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="0" selection-start="1107" selection-end="1107" vertical-scroll-proportion="0.7417582" vertical-offset="0" max-vertical-offset="546">
           <folding />
         </state>
       </provider>
