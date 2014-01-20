@@ -1,9 +1,14 @@
 package net.sksi.freezerbuddy
 
-
-
-import static org.springframework.http.HttpStatus.*
+import grails.converters.JSON
+import grails.converters.XML
 import grails.transaction.Transactional
+
+
+import static org.springframework.http.HttpStatus.CREATED
+import static org.springframework.http.HttpStatus.NOT_FOUND
+import static org.springframework.http.HttpStatus.NO_CONTENT
+import static org.springframework.http.HttpStatus.OK
 
 @Transactional(readOnly = true)
 class FreezerController {
@@ -12,7 +17,18 @@ class FreezerController {
 
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
-        respond Freezer.list(params), model:[freezerInstanceCount: Freezer.count()]
+        List<Freezer> list = Freezer.list(params)
+        withFormat {
+            html {
+                respond list, model:[freezerInstanceCount: Freezer.count()]
+            }
+            json {
+                respond list as JSON
+            }
+            xml {
+                respond list as XML
+            }
+        }
     }
 
     def show(Freezer freezerInstance) {

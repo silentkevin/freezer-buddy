@@ -1,8 +1,8 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Grails:freezer-buddy" type="GrailsRunConfigurationType" factoryName="Grails" singleton="true">
+  <configuration default="false" name="freezer-buddy prod" type="GrailsRunConfigurationType" factoryName="Grails" singleton="true">
     <module name="freezer-buddy" />
     <setting name="vmparams" value="-Dhttps -Dgrails.server.port.http=8056 -Dgrails.server.port.https=8057 -Dgrails.server.host=0.0.0.0" />
-    <setting name="cmdLine" value="run-app" />
+    <setting name="cmdLine" value="prod run-app" />
     <setting name="depsClasspath" value="false" />
     <setting name="passParentEnv" value="true" />
     <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
