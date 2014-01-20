@@ -1,5 +1,8 @@
 package net.sksi.freezerbuddy
 
+import grails.rest.Resource
+
+@Resource(uri = '/freezer', formats = ['json', 'xml'])
 class Freezer {
     String id = UUID.randomUUID().toString()
 

@@ -94,6 +94,8 @@ environments {
     }
 }
 
+grails.gorm.failOnError = true
+
 //oauth {
 //    providers {
 //        google {

@@ -1,5 +1,8 @@
 package net.sksi.freezerbuddy
 
+import grails.rest.Resource
+
+@Resource(uri = '/containedItem', formats = ['json', 'xml'])
 class ContainedItem {
     String id = UUID.randomUUID().toString()
 
@@ -8,6 +11,10 @@ class ContainedItem {
     String location
 
     ItemDefinition itemDefinition
+
+    static belongsTo = [
+        freezer: Freezer
+    ]
 
     static mapping = {
         id generator: 'assigned'
