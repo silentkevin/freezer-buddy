@@ -17,4 +17,9 @@ class ContainedItem {
         quantity nullable: false
         location nullable: true
     }
+
+    @Override
+    String toString() {
+        return "$quantity ${quantity != 1 ? itemDefinition.pluralName : itemDefinition.singularName}"
+    }
 }

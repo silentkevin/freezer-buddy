@@ -24,4 +24,9 @@ class Freezer {
         description nullable: true
         notes nullable: true
     }
+
+    @Override
+    String toString() {
+        "Freezer located at ${location} with ${containedItems.size()} kinds of items in it"
+    }
 }

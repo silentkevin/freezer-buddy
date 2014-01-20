@@ -1,24 +1,27 @@
-import groovy.transform.TypeChecked
 import net.sksi.freezerbuddy.ContainedItem
 import net.sksi.freezerbuddy.Freezer
 import net.sksi.freezerbuddy.ItemDefinition
 
-@TypeChecked
 class BootStrap {
 
     def init = { servletContext ->
         if (Freezer.list().size() == 0) {
-            ItemDefinition id1 = new ItemDefinition(name: "Angus Burgers", description: "Angus cheeseburgers")
-            ItemDefinition id2 = new ItemDefinition(name: "Cioppino", description: "Cioppino")
-            ItemDefinition id3 = new ItemDefinition(name: "Random Seafood", description: "Random seafood")
-            ItemDefinition id4 = new ItemDefinition(name: "Pecan Pie", description: "Pecan pie")
+            ItemDefinition id1 = new ItemDefinition(singularName: "Angus Burger", description: "Angus cheeseburger").save()
+            ItemDefinition id2 = new ItemDefinition(singularName: "Cioppino", pluralName: "Cioppino", description: "Cioppino").save()
+            ItemDefinition id3 = new ItemDefinition(singularName: "Random Seafood", description: "Random seafood").save()
+            ItemDefinition id4 = new ItemDefinition(singularName: "Pecan Pie Slice", description: "Pecan pie slice").save()
 
-            ContainedItem cd1 = new ContainedItem(itemDefinition: id1, quantity: 2)
-            ContainedItem cd2 = new ContainedItem(itemDefinition: id2, quantity: 1)
-            ContainedItem cd3 = new ContainedItem(itemDefinition: id3, quantity: 1, location: 'top')
-            ContainedItem cd4 = new ContainedItem(itemDefinition: id4, quantity: 3)
+            ContainedItem ci1 = new ContainedItem(itemDefinition: id1, quantity: 2).save()
+            ContainedItem ci2 = new ContainedItem(itemDefinition: id2, quantity: 1).save()
+            ContainedItem ci3 = new ContainedItem(itemDefinition: id3, quantity: 1, location: 'top').save()
+            ContainedItem ci4 = new ContainedItem(itemDefinition: id4, quantity: 3).save()
 
-            Freezer freezer = new Freezer()
+            Freezer freezer = new Freezer(location: "Basement", description: "Haier chest freezer")
+            freezer.addToContainedItems(ci1)
+            freezer.addToContainedItems(ci2)
+            freezer.addToContainedItems(ci3)
+            freezer.addToContainedItems(ci4)
+            freezer.save(flush: true)
         }
     }
 

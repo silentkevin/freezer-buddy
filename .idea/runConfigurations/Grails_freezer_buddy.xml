@@ -1,0 +1,18 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Grails:freezer-buddy" type="GrailsRunConfigurationType" factoryName="Grails" singleton="true">
+    <module name="freezer-buddy" />
+    <setting name="vmparams" value="-Dhttps -Dgrails.server.port.http=8056 -Dgrails.server.port.https=8057 -Dgrails.server.host=0.0.0.0" />
+    <setting name="cmdLine" value="run-app" />
+    <setting name="depsClasspath" value="false" />
+    <setting name="passParentEnv" value="true" />
+    <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+    <setting name="launchBrowser" value="false" />
+    <RunnerSettings RunnerId="GrailsMavenDebuggerRunner">
+      <option name="DEBUG_PORT" value="" />
+      <option name="TRANSPORT" value="0" />
+      <option name="LOCAL" value="true" />
+    </RunnerSettings>
+    <ConfigurationWrapper RunnerId="GrailsMavenDebuggerRunner" />
+    <method />
+  </configuration>
+</component>

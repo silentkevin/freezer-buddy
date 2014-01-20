@@ -24,9 +24,11 @@
 			<thead>
 					<tr>
 					
+						<g:sortableColumn property="pluralName" title="${message(code: 'itemDefinition.pluralName.label', default: 'Plural Name')}" />
+					
 						<g:sortableColumn property="description" title="${message(code: 'itemDefinition.description.label', default: 'Description')}" />
 					
-						<g:sortableColumn property="name" title="${message(code: 'itemDefinition.name.label', default: 'Name')}" />
+						<g:sortableColumn property="singularName" title="${message(code: 'itemDefinition.singularName.label', default: 'Singular Name')}" />
 					
 					</tr>
 				</thead>
@@ -34,9 +36,11 @@
 				<g:each in="${itemDefinitionInstanceList}" status="i" var="itemDefinitionInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${itemDefinitionInstance.id}">${fieldValue(bean: itemDefinitionInstance, field: "description")}</g:link></td>
+						<td><g:link action="show" id="${itemDefinitionInstance.id}">${fieldValue(bean: itemDefinitionInstance, field: "pluralName")}</g:link></td>
 					
-						<td>${fieldValue(bean: itemDefinitionInstance, field: "name")}</td>
+						<td>${fieldValue(bean: itemDefinitionInstance, field: "description")}</td>
+					
+						<td>${fieldValue(bean: itemDefinitionInstance, field: "singularName")}</td>
 					
 					</tr>
 				</g:each>

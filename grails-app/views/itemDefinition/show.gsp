@@ -23,6 +23,15 @@
 			</g:if>
 			<ol class="property-list itemDefinition">
 			
+				<g:if test="${itemDefinitionInstance?.pluralName}">
+				<li class="fieldcontain">
+					<span id="pluralName-label" class="property-label"><g:message code="itemDefinition.pluralName.label" default="Plural Name" /></span>
+					
+						<span class="property-value" aria-labelledby="pluralName-label"><g:fieldValue bean="${itemDefinitionInstance}" field="pluralName"/></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${itemDefinitionInstance?.description}">
 				<li class="fieldcontain">
 					<span id="description-label" class="property-label"><g:message code="itemDefinition.description.label" default="Description" /></span>
@@ -32,11 +41,11 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${itemDefinitionInstance?.name}">
+				<g:if test="${itemDefinitionInstance?.singularName}">
 				<li class="fieldcontain">
-					<span id="name-label" class="property-label"><g:message code="itemDefinition.name.label" default="Name" /></span>
+					<span id="singularName-label" class="property-label"><g:message code="itemDefinition.singularName.label" default="Singular Name" /></span>
 					
-						<span class="property-value" aria-labelledby="name-label"><g:fieldValue bean="${itemDefinitionInstance}" field="name"/></span>
+						<span class="property-value" aria-labelledby="singularName-label"><g:fieldValue bean="${itemDefinitionInstance}" field="singularName"/></span>
 					
 				</li>
 				</g:if>

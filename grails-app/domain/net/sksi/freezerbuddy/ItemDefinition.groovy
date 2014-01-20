@@ -3,14 +3,20 @@ package net.sksi.freezerbuddy
 class ItemDefinition {
     String id = UUID.randomUUID().toString()
 
-    String name
+    String singularName
+    String pluralName
     String description
+
+    String getPluralName() {
+        return pluralName ?: singularName + 's'
+    }
 
     static mapping = {
         id generator: 'assigned'
     }
 
     static constraints = {
+        pluralName nullable: true
         description nullable: true, type: 'text'
     }
 }
