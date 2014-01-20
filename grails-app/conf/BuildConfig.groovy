@@ -70,6 +70,10 @@ grails.project.dependency.resolution = {
         compile ":rest:0.8"
         compile ":angularjs-resources:1.2.5"
 
+        compile ":twitter-bootstrap:3.0.3"
+
+//        compile ":oauth:2.1.0"
+
         // Uncomment these (or add new ones) to enable additional resources capabilities
         //runtime ":zipped-resources:1.0.1"
         //runtime ":cached-resources:1.1"

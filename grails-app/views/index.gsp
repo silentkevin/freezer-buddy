@@ -109,6 +109,8 @@
 			   content you may choose. Below is a list of controllers that are currently deployed in this application,
 			   click on each to execute its default action:</p>
 
+            %{--<oauth:connect provider="google">Connect to Twitter</oauth:connect>--}%
+
 			<div id="controller-list" role="navigation">
 				<h2>Available Controllers:</h2>
 				<ul>

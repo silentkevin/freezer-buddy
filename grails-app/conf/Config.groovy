@@ -93,6 +93,17 @@ environments {
     }
 }
 
+//oauth {
+//    providers {
+//        google {
+//            api = GoogleApi
+//            key = '155905158555-fo1dq404kctsupjkas7rq9a035r5ujn2.apps.googleusercontent.com'
+//            secret = 'A5BNqySS5PkkMH296dGNhLTB'
+//        }
+//    }
+//    debug = true
+//}
+
 // log4j configuration
 log4j = {
     // Example of changing the log pattern for the default console appender:

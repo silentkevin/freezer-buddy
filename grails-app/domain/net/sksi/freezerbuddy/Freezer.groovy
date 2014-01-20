@@ -4,7 +4,7 @@ class Freezer {
     List<ContainedItem> containedItems
 
     static hasMany = [
-        ContainedItem: 'containedItems'
+        containedItems: ContainedItem
     ]
 
     static constraints = {
