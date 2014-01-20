@@ -23,6 +23,33 @@
 			</g:if>
 			<ol class="property-list freezer">
 			
+				<g:if test="${freezerInstance?.location}">
+				<li class="fieldcontain">
+					<span id="location-label" class="property-label"><g:message code="freezer.location.label" default="Location" /></span>
+					
+						<span class="property-value" aria-labelledby="location-label"><g:fieldValue bean="${freezerInstance}" field="location"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${freezerInstance?.description}">
+				<li class="fieldcontain">
+					<span id="description-label" class="property-label"><g:message code="freezer.description.label" default="Description" /></span>
+					
+						<span class="property-value" aria-labelledby="description-label"><g:fieldValue bean="${freezerInstance}" field="description"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${freezerInstance?.notes}">
+				<li class="fieldcontain">
+					<span id="notes-label" class="property-label"><g:message code="freezer.notes.label" default="Notes" /></span>
+					
+						<span class="property-value" aria-labelledby="notes-label"><g:fieldValue bean="${freezerInstance}" field="notes"/></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${freezerInstance?.containedItems}">
 				<li class="fieldcontain">
 					<span id="containedItems-label" class="property-label"><g:message code="freezer.containedItems.label" default="Contained Items" /></span>

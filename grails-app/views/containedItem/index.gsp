@@ -26,6 +26,8 @@
 					
 						<g:sortableColumn property="quantity" title="${message(code: 'containedItem.quantity.label', default: 'Quantity')}" />
 					
+						<g:sortableColumn property="location" title="${message(code: 'containedItem.location.label', default: 'Location')}" />
+					
 						<th><g:message code="containedItem.itemDefinition.label" default="Item Definition" /></th>
 					
 					</tr>
@@ -35,6 +37,8 @@
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
 						<td><g:link action="show" id="${containedItemInstance.id}">${fieldValue(bean: containedItemInstance, field: "quantity")}</g:link></td>
+					
+						<td>${fieldValue(bean: containedItemInstance, field: "location")}</td>
 					
 						<td>${fieldValue(bean: containedItemInstance, field: "itemDefinition")}</td>
 					

@@ -24,11 +24,23 @@
 			<thead>
 					<tr>
 					
+						<g:sortableColumn property="location" title="${message(code: 'freezer.location.label', default: 'Location')}" />
+					
+						<g:sortableColumn property="description" title="${message(code: 'freezer.description.label', default: 'Description')}" />
+					
+						<g:sortableColumn property="notes" title="${message(code: 'freezer.notes.label', default: 'Notes')}" />
+					
 					</tr>
 				</thead>
 				<tbody>
 				<g:each in="${freezerInstanceList}" status="i" var="freezerInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
+					
+						<td><g:link action="show" id="${freezerInstance.id}">${fieldValue(bean: freezerInstance, field: "location")}</g:link></td>
+					
+						<td>${fieldValue(bean: freezerInstance, field: "description")}</td>
+					
+						<td>${fieldValue(bean: freezerInstance, field: "notes")}</td>
 					
 					</tr>
 				</g:each>

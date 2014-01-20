@@ -15,7 +15,7 @@ class BootStrap {
 
             ContainedItem cd1 = new ContainedItem(itemDefinition: id1, quantity: 2)
             ContainedItem cd2 = new ContainedItem(itemDefinition: id2, quantity: 1)
-            ContainedItem cd3 = new ContainedItem(itemDefinition: id3, quantity: 1)
+            ContainedItem cd3 = new ContainedItem(itemDefinition: id3, quantity: 1, location: 'top')
             ContainedItem cd4 = new ContainedItem(itemDefinition: id4, quantity: 3)
 
             Freezer freezer = new Freezer()

@@ -32,6 +32,15 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${containedItemInstance?.location}">
+				<li class="fieldcontain">
+					<span id="location-label" class="property-label"><g:message code="containedItem.location.label" default="Location" /></span>
+					
+						<span class="property-value" aria-labelledby="location-label"><g:fieldValue bean="${containedItemInstance}" field="location"/></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${containedItemInstance?.itemDefinition}">
 				<li class="fieldcontain">
 					<span id="itemDefinition-label" class="property-label"><g:message code="containedItem.itemDefinition.label" default="Item Definition" /></span>
