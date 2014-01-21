@@ -11,7 +11,7 @@ class BootStrap {
             ItemDefinition id3 = new ItemDefinition(singularName: "Random Seafood", description: "Random seafood").save()
             ItemDefinition id4 = new ItemDefinition(singularName: "Pecan Pie Slice", description: "Pecan pie slice").save()
 
-            Freezer freezer = new Freezer(location: "Basement", description: "Haier chest freezer")
+            Freezer freezer = new Freezer(id: "aa0beed3-540d-4446-aafa-7600170ef0ba", location: "Basement", description: "Haier chest freezer")
 
             ContainedItem ci1 = new ContainedItem(itemDefinition: id1, quantity: 2, freezer: freezer)
             ContainedItem ci2 = new ContainedItem(itemDefinition: id2, quantity: 1, freezer: freezer)

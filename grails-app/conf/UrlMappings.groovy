@@ -7,6 +7,10 @@ class UrlMappings {
             }
         }
 
+        "/freezer"(resources: "freezer") {
+            "/containedItem"(resources: "containedItem")
+        }
+
         "/"(view:"/index")
         "500"(view:'/error')
 	}

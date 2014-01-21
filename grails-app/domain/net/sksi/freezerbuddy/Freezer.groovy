@@ -2,7 +2,7 @@ package net.sksi.freezerbuddy
 
 import grails.rest.Resource
 
-@Resource(uri = '/freezer', formats = ['json', 'xml'])
+@Resource(formats = ['hal', 'json', 'xml'])
 class Freezer {
     String id = UUID.randomUUID().toString()
 
@@ -20,6 +20,7 @@ class Freezer {
         id generator: 'assigned'
         description type: 'text'
         notes type: 'text'
+        containedItems fetch: 'eager'
     }
 
     static constraints = {

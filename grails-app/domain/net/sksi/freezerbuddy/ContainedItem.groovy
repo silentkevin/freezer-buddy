@@ -2,7 +2,7 @@ package net.sksi.freezerbuddy
 
 import grails.rest.Resource
 
-@Resource(uri = '/containedItem', formats = ['json', 'xml'])
+@Resource(formats = ['hal', 'json', 'xml'])
 class ContainedItem {
     String id = UUID.randomUUID().toString()
 
